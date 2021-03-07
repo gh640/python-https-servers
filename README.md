@@ -23,6 +23,31 @@ cd python-https-servers/
 openssl req -new -x509 -keyout localhost.pem -out localhost.pem -days 365 -nodes
 ```
 
+Sample dialog of `openssl req`:
+
+```bash
+openssl req -new -x509 -keyout localhost.pem -out localhost.pem -days 365 -nodes
+Generating a 2048 bit RSA private key
+..+++
+.........................+++
+writing new private key to 'localhost.pem'
+-----
+You are about to be asked to enter information that will be incorporated
+into your certificate request.
+What you are about to enter is what is called a Distinguished Name or a DN.
+There are quite a few fields but you can leave some blank
+For some fields there will be a default value,
+If you enter '.', the field will be left blank.
+-----
+Country Name (2 letter code) []:xxx
+State or Province Name (full name) []:xxx
+Locality Name (eg, city) []:xxx
+Organization Name (eg, company) []:
+Organizational Unit Name (eg, section) []:
+Common Name (eg, fully qualified host name) []:localhost
+Email Address []:
+```
+
 ### 1. Python standard libraries
 
 ```bash
