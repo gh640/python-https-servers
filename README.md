@@ -31,7 +31,7 @@ openssl req -new -x509 -keyout localhost.pem -out localhost.pem -days 365 -nodes
 
 ### 2. Gunicorn
 
-Install the required packages with Poetry or `pip`.
+Install the required packages with [Poetry](https://python-poetry.org/) or `pip`.
 
 ```bash
 poetry install
