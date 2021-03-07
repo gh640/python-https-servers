@@ -1,8 +1,6 @@
 # Python https servers
 
-Examples of an https server for development. They work on Python 3.
-
-**These are for development usage and never use them for production.**
+Examples of an https server for development. **Never use them for production.**
 
 ## Samples
 
