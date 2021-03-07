@@ -18,32 +18,18 @@ Generate a self-signed certificate and name it `localhost.pem`.
 
 ```bash
 cd python-https-servers/
-openssl req -new -x509 -keyout localhost.pem -out localhost.pem -days 365 -nodes
+openssl req -x509 -new -days 365 -nodes \
+  -keyout localhost.pem \
+  -out localhost.pem \
+  -subj "/CN=localhost"
 ```
 
-Sample dialog of `openssl req`:
-
-```bash
-openssl req -new -x509 -keyout localhost.pem -out localhost.pem -days 365 -nodes
+```text
 Generating a 2048 bit RSA private key
-..+++
-.........................+++
+.....................................................................................................................................+++
+........+++
 writing new private key to 'localhost.pem'
 -----
-You are about to be asked to enter information that will be incorporated
-into your certificate request.
-What you are about to enter is what is called a Distinguished Name or a DN.
-There are quite a few fields but you can leave some blank
-For some fields there will be a default value,
-If you enter '.', the field will be left blank.
------
-Country Name (2 letter code) []:xxx
-State or Province Name (full name) []:xxx
-Locality Name (eg, city) []:xxx
-Organization Name (eg, company) []:
-Organizational Unit Name (eg, section) []:
-Common Name (eg, fully qualified host name) []:localhost
-Email Address []:
 ```
 
 ### 1. Python standard libraries
@@ -105,3 +91,11 @@ You can view the sample html file on your browser with `https://localhost`.
 └── with_python
     └── server.py: Sample with Python standard libraries
 ```
+
+## Reference
+
+- [`http.server` HTTP servers — Python 3 documentation](https://docs.python.org/3/library/http.server.html)
+- [`ssl` TLS/SSL wrapper for socket objects — Python 3 documentation](https://docs.python.org/3/library/ssl.html)
+- [Creating an HTTPS server in Python · Martin Pitt](https://piware.de/2011/01/creating-an-https-server-in-python/)
+- [simple-https-server.py · GitHub](https://gist.github.com/dergachev/7028596)
+- [Simple Python HTTP(S) Server Example · AnvilEight Blog](https://blog.anvileight.com/posts/simple-python-http-server/)
