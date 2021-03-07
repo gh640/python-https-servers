@@ -39,7 +39,7 @@ poetry install
 python3 -m pip install gunicorn
 ```
 
-Then run `run-gunicorn.sh`.
+Then execute `run-gunicorn.sh`.
 
 ```bash
 ./run-gunicorn.sh
@@ -55,8 +55,10 @@ poetry install
 python3 -m pip install gunicorn Flask
 ```
 
+Then execute `run-gunicorn-flask.sh`.
+
 ```bash
-./run-gunicorn.sh
+./run-gunicorn-flask.sh
 ```
 
 ## Files
