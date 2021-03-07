@@ -61,6 +61,8 @@ Then execute `run-gunicorn-flask.sh`.
 ./run-gunicorn-flask.sh
 ```
 
+You can view the sample html file on your browser with `https://localhost`.
+
 ## Files
 
 ```text
