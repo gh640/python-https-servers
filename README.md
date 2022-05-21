@@ -34,6 +34,8 @@ writing new private key to 'localhost.pem'
 
 ### 1. Python standard libraries
 
+Just execute `run-python.sh`.
+
 ```bash
 ./run-python.sh
 ```
@@ -56,7 +58,7 @@ Then execute `run-gunicorn.sh`.
 
 ### 3. Gunicorn + Flask
 
-Install the requiredpackage with Poetry or `pip`.
+Install the required packages with Poetry or `pip`.
 
 ```bash
 poetry install
@@ -71,6 +73,10 @@ Then execute `run-gunicorn-flask.sh`.
 ```
 
 You can view the sample html file on your browser with `https://localhost`.
+
+```bash
+open https://localhost
+```
 
 ## Files
 
