@@ -7,7 +7,7 @@ authors = ["Goto Hayato <habita.gh@gmail.com>"]
 [tool.poetry.dependencies]
 python = "^3.9"
 gunicorn = "^20.0.4"
-Flask = "^1.1.2"
+Flask = "^2.3.2"
 
 [tool.poetry.dev-dependencies]
 
